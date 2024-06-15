@@ -2,75 +2,72 @@
 
 /* General styles */
 body {
-  background-color: #000;
-  /* Background color */
-  color: #fff;
-  /* Text color */
+  background-color: #000; /* Background color */
+  color: #fff; /* Text color */
 }
 
 /* Navbar styles */
 .navbar-custom {
-  background-color: #000;
-  /* Navbar background color */
+  background-color: #000; /* Navbar background color */
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
-  color: #ffc107;
-  /* Navbar link color */
+  color: #ffc107; /* Navbar link color */
 }
 
 /* Jumbotron styles */
 .jumbotron-custom {
-  background-image: url('../../src/AB1ek.jpeg');
-  /* Background image */
-  background-size: cover;
-  /* Ensure the image covers the entire jumbotron */
-  background-position: center;
-  /* Center the background image */
-  color: #fff;
-  /* Text color */
-  padding: 100px 0;
-  /* Top and bottom padding for jumbotron */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-  /* Shadow untuk teks */
+  position: relative; /* Set position relative for overlay */
+  background-image: url("../../src/AB1ek.jpeg"); /* Background image */
+  background-size: cover; /* Ensure the image covers the entire jumbotron */
+  background-position: center; /* Center the background image */
+  color: #fff; /* Text color */
+  padding: 100px 0; /* Top and bottom padding for jumbotron */
 }
 
-/* Atur teks agar lebih terlihat dengan background yang gelap */
+/* Overlay gelap untuk latar belakang jumbotron */
+.jumbotron-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Warna overlay gelap */
+}
+
+/* Atur teks agar tetap terlihat dengan background yang gelap */
 .jumbotron-custom h1,
-.jumbotron-custom .lead,
-.jumbotron-custom .btn {
-  color: #fff;
-  /* Warna teks */
+.jumbotron-custom .lead {
+  color: #fff; /* Warna teks */
 }
 
-/* Opacity untuk teks di dropdown */
+/* Dropdown menu styles */
+.dropdown-menu-custom {
+  background-color: #000; /* Dropdown menu background color (match navbar) */
+  border: none; /* Remove border */
+  animation: fadeIn 0.3s ease; /* Animation for dropdown */
+}
+
 .dropdown-menu-custom .dropdown-item {
-  color: #fff;
-  /* Warna teks */
+  color: #fff; /* Dropdown item text color */
 }
 
 .dropdown-menu-custom .dropdown-item:hover {
-  background-color: #ffc107;
-  /* Warna latar belakang saat hover */
-  color: #000;
-  /* Warna teks saat hover */
+  background-color: #ffc107; /* Hover background color */
+  color: #000; /* Hover text color */
 }
 
 /* Content styles */
 .container {
-  margin-top: 30px;
-  /* Top margin for content */
+  margin-top: 30px; /* Top margin for content */
 }
 
 /* Footer styles */
 .footer-custom {
-  background-color: #ffc107;
-  /* Footer background color */
-  color: #000;
-  /* Footer text color */
-  padding: 20px 0;
-  /* Top and bottom padding for footer */
+  background-color: #ffc107; /* Footer background color */
+  color: #000; /* Footer text color */
+  padding: 20px 0; /* Top and bottom padding for footer */
 }
 
 /* Dropdown animation */
@@ -79,7 +76,6 @@ body {
     opacity: 0;
     transform: translateY(-10px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
