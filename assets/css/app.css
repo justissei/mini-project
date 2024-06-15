@@ -2,65 +2,86 @@
 
 /* General styles */
 body {
-    background-color: #000; /* Background color */
-    color: #fff; /* Text color */
+  background-color: #000;
+  /* Background color */
+  color: #fff;
+  /* Text color */
 }
 
 /* Navbar styles */
 .navbar-custom {
-    background-color: #000; /* Navbar background color */
+  background-color: #000;
+  /* Navbar background color */
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
-    color: #ffc107; /* Navbar link color */
+  color: #ffc107;
+  /* Navbar link color */
 }
 
 /* Jumbotron styles */
 .jumbotron-custom {
-    background-image: url("src/ABcmp.jpg"); /* Background image */
-    background-size: cover; /* Ensure the image covers the entire jumbotron */
-    background-position: center; /* Center the background image */
-    color: #fff; /* Text color */
-    padding: 100px 0; /* Top and bottom padding for jumbotron */
+  background-image: url('../../src/AB1ek.jpeg');
+  /* Background image */
+  background-size: cover;
+  /* Ensure the image covers the entire jumbotron */
+  background-position: center;
+  /* Center the background image */
+  color: #fff;
+  /* Text color */
+  padding: 100px 0;
+  /* Top and bottom padding for jumbotron */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  /* Shadow untuk teks */
 }
 
-/* Dropdown menu styles */
-.dropdown-menu-custom {
-    background-color: #000; /* Dropdown menu background color (match navbar) */
-    border: none; /* Remove border */
-    animation: fadeIn 0.3s ease; /* Animation for dropdown */
+/* Atur teks agar lebih terlihat dengan background yang gelap */
+.jumbotron-custom h1,
+.jumbotron-custom .lead,
+.jumbotron-custom .btn {
+  color: #fff;
+  /* Warna teks */
 }
 
+/* Opacity untuk teks di dropdown */
 .dropdown-menu-custom .dropdown-item {
-    color: #fff; /* Dropdown item text color */
+  color: #fff;
+  /* Warna teks */
 }
 
 .dropdown-menu-custom .dropdown-item:hover {
-    background-color: #ffc107; /* Hover background color */
-    color: #000; /* Hover text color */
+  background-color: #ffc107;
+  /* Warna latar belakang saat hover */
+  color: #000;
+  /* Warna teks saat hover */
 }
 
 /* Content styles */
 .container {
-    margin-top: 30px; /* Top margin for content */
+  margin-top: 30px;
+  /* Top margin for content */
 }
 
 /* Footer styles */
 .footer-custom {
-    background-color: #ffc107; /* Footer background color */
-    color: #000; /* Footer text color */
-    padding: 20px 0; /* Top and bottom padding for footer */
+  background-color: #ffc107;
+  /* Footer background color */
+  color: #000;
+  /* Footer text color */
+  padding: 20px 0;
+  /* Top and bottom padding for footer */
 }
 
 /* Dropdown animation */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
