@@ -45,11 +45,6 @@ body {
     text-align: center;
 }
 
-.card-title,
-.card-text {
-    color: #fff;
-}
-
 /* Animasi teks pada jumbotron */
 @keyframes fadeIn {
     from {
@@ -73,7 +68,7 @@ body {
 
 /* Dropdown menu styles */
 .dropdown-menu-custom {
-    background-color: #000;
+    /* background-color: #000; */
     /* Warna latar belakang menu dropdown */
     border: none;
     /* Hapus border */
@@ -82,7 +77,7 @@ body {
 }
 
 .dropdown-menu-custom .dropdown-item {
-    color: #fff;
+    color: #ffc107;
     /* Warna teks item dropdown */
 }
 
