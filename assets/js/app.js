@@ -1,21 +1,21 @@
-// Custom JavaScript for Ayam Bakar Beller
+// JavaScript untuk animasi teks pada jumbotron saat scroll
+document.addEventListener("DOMContentLoaded", function() {
+  var jumbotron = document.querySelector(".jumbotron-custom");
 
-document.addEventListener("DOMContentLoaded", function () {
-    var dropdowns = document.querySelectorAll(".dropdown");
+  function fadeInOnScroll() {
+    var distanceFromTop = jumbotron.getBoundingClientRect().top;
+    var windowHeight = window.innerHeight;
 
-    dropdowns.forEach(function (dropdown) {
-        dropdown.addEventListener("hide.bs.dropdown", function () {
-            var dropdownMenu = dropdown.querySelector(".dropdown-menu");
-            dropdownMenu.style.transition = "opacity 0.3s, transform 0.3s";
-            dropdownMenu.style.opacity = "0";
-            dropdownMenu.style.transform = "translateY(-10px)";
-        });
+    if (distanceFromTop < windowHeight - 100) {
+      jumbotron.classList.add("animate-fade-in");
+    } else {
+      jumbotron.classList.remove("animate-fade-in");
+    }
+  }
 
-        dropdown.addEventListener("hidden.bs.dropdown", function () {
-            var dropdownMenu = dropdown.querySelector(".dropdown-menu");
-            dropdownMenu.style.transition = "";
-            dropdownMenu.style.opacity = "";
-            dropdownMenu.style.transform = "";
-        });
-    });
+  fadeInOnScroll();
+
+  window.addEventListener("scroll", function() {
+    fadeInOnScroll();
+  });
 });
