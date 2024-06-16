@@ -2,72 +2,101 @@
 
 /* General styles */
 body {
-  background-color: #000; /* Background color */
-  color: #fff; /* Text color */
+  background-color: #000;
+  /* Background color */
+  color: #fff;
+  /* Text color */
 }
 
 /* Navbar styles */
 .navbar-custom {
-  background-color: #000; /* Navbar background color */
+  background-color: #000;
+  /* Navbar background color */
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
-  color: #ffc107; /* Navbar link color */
+  color: #ffc107;
+  /* Navbar link color */
 }
 
 /* Jumbotron styles */
 .jumbotron-custom {
-  position: relative; /* Set position relative for overlay */
-  background-image: url("../../src/AB1ek.jpeg"); /* Background image */
-  background-size: cover; /* Ensure the image covers the entire jumbotron */
-  background-position: center; /* Center the background image */
-  color: #fff; /* Text color */
-  padding: 100px 0; /* Top and bottom padding for jumbotron */
+  position: relative;
+  /* Position relative untuk overlay */
+  background-image: url('../../src/bg_jmbt_dark.png');
+  /* Background image baru */
+  background-size: cover;
+  /* Pastikan gambar meliputi seluruh jumbotron */
+  background-position: center;
+  /* Posisikan gambar di tengah */
+  color: #fff;
+  /* Warna teks */
+  padding: 100px 0;
+  /* Padding atas dan bawah untuk jumbotron */
+  text-align: left;
+  /* Teks di tengah */
+  overflow: hidden;
+  /* Sembunyikan overflow agar tidak ada gambar yang keluar */
 }
 
-/* Overlay gelap untuk latar belakang jumbotron */
-.jumbotron-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Warna overlay gelap */
+/* Animasi teks pada jumbotron */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Geser teks ke bawah saat mulai */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    /* Kembalikan teks ke posisi awal */
+  }
 }
 
-/* Atur teks agar tetap terlihat dengan background yang gelap */
 .jumbotron-custom h1,
 .jumbotron-custom .lead {
-  color: #fff; /* Warna teks */
+  animation: fadeIn 1s ease-out;
+  /* Animasi untuk teks */
 }
 
 /* Dropdown menu styles */
 .dropdown-menu-custom {
-  background-color: #000; /* Dropdown menu background color (match navbar) */
-  border: none; /* Remove border */
-  animation: fadeIn 0.3s ease; /* Animation for dropdown */
+  background-color: #000;
+  /* Warna latar belakang menu dropdown */
+  border: none;
+  /* Hapus border */
+  animation: fadeIn 0.3s ease;
+  /* Animasi untuk dropdown */
 }
 
 .dropdown-menu-custom .dropdown-item {
-  color: #fff; /* Dropdown item text color */
+  color: #fff;
+  /* Warna teks item dropdown */
 }
 
 .dropdown-menu-custom .dropdown-item:hover {
-  background-color: #ffc107; /* Hover background color */
-  color: #000; /* Hover text color */
+  background-color: #ffc107;
+  /* Warna latar belakang hover */
+  color: #000;
+  /* Warna teks hover */
 }
 
 /* Content styles */
 .container {
-  margin-top: 30px; /* Top margin for content */
+  margin-top: 30px;
+  /* Margin atas untuk konten */
 }
 
 /* Footer styles */
 .footer-custom {
-  background-color: #ffc107; /* Footer background color */
-  color: #000; /* Footer text color */
-  padding: 20px 0; /* Top and bottom padding for footer */
+  background-color: #ffc107;
+  /* Warna latar belakang footer */
+  color: #000;
+  /* Warna teks footer */
+  padding: 20px 0;
+  /* Padding atas dan bawah untuk footer */
 }
 
 /* Dropdown animation */
@@ -76,6 +105,7 @@ body {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
