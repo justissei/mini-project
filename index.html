@@ -32,10 +32,15 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
+                            <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Reservasi</a>
+                            <a class="nav-link" href="#menu-header">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservasi.html"
+                                >Reservasi</a
+                            >
                         </li>
                         <li class="nav-item dropdown">
                             <!-- Dropdown menu -->
@@ -55,12 +60,18 @@
                             >
                                 <!-- Tambahkan kelas dropdown-menu-custom -->
                                 <li>
-                                    <a class="dropdown-item" href="#"
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://wa.me/message/CLXWWJ3L3SZ4I1"
                                         >WhatsApp</a
                                     >
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Email</a>
+                                    <a
+                                        class="dropdown-item"
+                                        href="mailto:justisseiz@gmail.com"
+                                        >Email</a
+                                    >
                                 </li>
                             </ul>
                         </li>
@@ -94,29 +105,11 @@
 
         <!-- carousel -->
         <div>
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button
-                        type="button"
-                        data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="0"
-                        class="active"
-                        aria-current="true"
-                        aria-label="Slide 1"
-                    ></button>
-                    <button
-                        type="button"
-                        data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="1"
-                        aria-label="Slide 2"
-                    ></button>
-                    <button
-                        type="button"
-                        data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="2"
-                        aria-label="Slide 3"
-                    ></button>
-                </div>
+            <div
+                id="carouselExampleAutoplaying"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img
@@ -143,7 +136,7 @@
                 <button
                     class="carousel-control-prev"
                     type="button"
-                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-target="#carouselExampleAutoplaying"
                     data-bs-slide="prev"
                 >
                     <span
@@ -155,7 +148,7 @@
                 <button
                     class="carousel-control-next"
                     type="button"
-                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-target="#carouselExampleAutoplaying"
                     data-bs-slide="next"
                 >
                     <span
@@ -169,7 +162,7 @@
         <!-- carousel end -->
 
         <!-- menu header -->
-        <div class="container">
+        <div class="container" id="menu-header">
             <h2 class="menu-header">Special Menu</h2>
         </div>
         <!-- menu header end -->

@@ -40,6 +40,25 @@ body {
     /* Sembunyikan overflow agar tidak ada gambar yang keluar */
 }
 
+.jumbotron-custom1 {
+    position: relative;
+    /* Position relative untuk overlay */
+    background-image: url("../../src/oops.jpg");
+    /* Background image baru */
+    background-size: cover;
+    /* Pastikan gambar meliputi seluruh jumbotron */
+    background-position: center;
+    /* Posisikan gambar di tengah */
+    color: #fff;
+    /* Warna teks */
+    padding: 100px 0;
+    /* Padding atas dan bawah untuk jumbotron */
+    text-align: left;
+    /* Teks di tengah */
+    overflow: hidden;
+    /* Sembunyikan overflow agar tidak ada gambar yang keluar */
+}
+
 .menu-header {
     padding: 20px;
     text-align: center;
